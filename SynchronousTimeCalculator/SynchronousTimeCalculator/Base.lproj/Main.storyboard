@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main Container View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainContainerViewController" customModule="SynchronousTimeCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" userLabel="ContainerVIew">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oLn-9F-4HZ" userLabel="ContainerScrollView">
+                                <rect key="frame" x="0.0" y="5" width="414" height="896"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J7H-24-ivX">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                        <subviews>
+                                            <stackView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Lmi-18-bn5">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="Lmi-18-bn5" firstAttribute="top" secondItem="J7H-24-ivX" secondAttribute="top" id="bba-AW-qzV"/>
+                                            <constraint firstItem="Lmi-18-bn5" firstAttribute="centerX" secondItem="J7H-24-ivX" secondAttribute="centerX" id="dMm-Oj-e6t"/>
+                                            <constraint firstItem="Lmi-18-bn5" firstAttribute="width" secondItem="J7H-24-ivX" secondAttribute="width" id="dRD-ei-un0"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="J7H-24-ivX" firstAttribute="top" secondItem="oLn-9F-4HZ" secondAttribute="top" id="DAl-ds-ReL"/>
+                                    <constraint firstItem="J7H-24-ivX" firstAttribute="centerY" secondItem="oLn-9F-4HZ" secondAttribute="centerY" id="JWp-ov-2Ks"/>
+                                    <constraint firstItem="J7H-24-ivX" firstAttribute="width" secondItem="oLn-9F-4HZ" secondAttribute="width" id="RjU-Ad-S3b"/>
+                                    <constraint firstItem="J7H-24-ivX" firstAttribute="height" secondItem="oLn-9F-4HZ" secondAttribute="height" id="a9w-Xq-dYa"/>
+                                    <constraint firstItem="J7H-24-ivX" firstAttribute="centerX" secondItem="oLn-9F-4HZ" secondAttribute="centerX" id="atB-45-6C7"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="oLn-9F-4HZ" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="9Ej-G1-xbj"/>
+                            <constraint firstItem="oLn-9F-4HZ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="9bN-Sr-ucb"/>
+                            <constraint firstItem="oLn-9F-4HZ" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="ZLs-hq-6E9"/>
+                            <constraint firstItem="oLn-9F-4HZ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="d46-mq-CAD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="childView" destination="J7H-24-ivX" id="mUp-R2-bk8"/>
+                        <outlet property="containerScrollView" destination="oLn-9F-4HZ" id="AMQ-An-UBV"/>
+                        <outlet property="listContainer" destination="Lmi-18-bn5" id="nHe-wQ-bqG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="79.710144927536234" y="20.758928571428569"/>
+        </scene>
+    </scenes>
+</document>
