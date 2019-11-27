@@ -15,8 +15,8 @@ struct ListeningTime: Decodable, Hashable {
 }
 
 // Fetch
-func readListeningTimesJsonFile() -> ListeningTimes? {
-    if let path = Bundle.main.path(forResource: "listeningTimes", ofType: "json") {
+func readListeningTimesJson(file: String, bundle: Bundle = Bundle.main) -> ListeningTimes? {
+    if let path = bundle.path(forResource: file, ofType: "json") {
         do {
             let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
             let decoder = JSONDecoder()

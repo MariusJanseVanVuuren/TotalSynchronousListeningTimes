@@ -11,7 +11,7 @@ class MainContainerViewController: UIViewController {
     }
     
     private func configureWithListeningTimes() {
-        if let listeningTimes = readListeningTimesJsonFile() {
+        if let listeningTimes = readListeningTimesJson(file: "listeningTimes") {
             let fullListeningTime = determineTotalSynchronousListeningTime(from: listeningTimes.times)
             addTotalListeningTimeLabel(fullListeningTime)
             addBarChart(with: listeningTimes.times)

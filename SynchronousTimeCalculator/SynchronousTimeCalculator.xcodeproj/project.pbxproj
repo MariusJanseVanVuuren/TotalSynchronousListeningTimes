@@ -20,7 +20,19 @@
 		29931EDD238DC7FA007A8EBB /* BarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29931EDC238DC7FA007A8EBB /* BarChart.swift */; };
 		29931EDF238DF139007A8EBB /* ListeningTimeCalculations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29931EDE238DF139007A8EBB /* ListeningTimeCalculations.swift */; };
 		29931EE1238DF159007A8EBB /* ArrayExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29931EE0238DF159007A8EBB /* ArrayExtentions.swift */; };
+		29931EE9238E4F0B007A8EBB /* SynchronousTimeCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29931EE8238E4F0B007A8EBB /* SynchronousTimeCalculatorTests.swift */; };
+		29931EF1238E511E007A8EBB /* listeningTimesTests.json in Resources */ = {isa = PBXBuildFile; fileRef = 29931EF0238E511E007A8EBB /* listeningTimesTests.json */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		29931EEB238E4F0B007A8EBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29931EAF238DAF48007A8EBB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 29931EB6238DAF48007A8EBB;
+			remoteInfo = SynchronousTimeCalculator;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		29931EB7238DAF48007A8EBB /* SynchronousTimeCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SynchronousTimeCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,10 +50,21 @@
 		29931EDC238DC7FA007A8EBB /* BarChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChart.swift; sourceTree = "<group>"; };
 		29931EDE238DF139007A8EBB /* ListeningTimeCalculations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListeningTimeCalculations.swift; sourceTree = "<group>"; };
 		29931EE0238DF159007A8EBB /* ArrayExtentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtentions.swift; sourceTree = "<group>"; };
+		29931EE6238E4F0B007A8EBB /* SynchronousTimeCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SynchronousTimeCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		29931EE8238E4F0B007A8EBB /* SynchronousTimeCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynchronousTimeCalculatorTests.swift; sourceTree = "<group>"; };
+		29931EEA238E4F0B007A8EBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29931EF0238E511E007A8EBB /* listeningTimesTests.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = listeningTimesTests.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		29931EB4238DAF48007A8EBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29931EE3238E4F0B007A8EBB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -55,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				29931EB9238DAF48007A8EBB /* SynchronousTimeCalculator */,
+				29931EE7238E4F0B007A8EBB /* SynchronousTimeCalculatorTests */,
 				29931EB8238DAF48007A8EBB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				29931EB7238DAF48007A8EBB /* SynchronousTimeCalculator.app */,
+				29931EE6238E4F0B007A8EBB /* SynchronousTimeCalculatorTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -136,6 +161,16 @@
 			path = BarChart;
 			sourceTree = "<group>";
 		};
+		29931EE7238E4F0B007A8EBB /* SynchronousTimeCalculatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				29931EE8238E4F0B007A8EBB /* SynchronousTimeCalculatorTests.swift */,
+				29931EF0238E511E007A8EBB /* listeningTimesTests.json */,
+				29931EEA238E4F0B007A8EBB /* Info.plist */,
+			);
+			path = SynchronousTimeCalculatorTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -156,6 +191,24 @@
 			productReference = 29931EB7238DAF48007A8EBB /* SynchronousTimeCalculator.app */;
 			productType = "com.apple.product-type.application";
 		};
+		29931EE5238E4F0B007A8EBB /* SynchronousTimeCalculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29931EEF238E4F0B007A8EBB /* Build configuration list for PBXNativeTarget "SynchronousTimeCalculatorTests" */;
+			buildPhases = (
+				29931EE2238E4F0B007A8EBB /* Sources */,
+				29931EE3238E4F0B007A8EBB /* Frameworks */,
+				29931EE4238E4F0B007A8EBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				29931EEC238E4F0B007A8EBB /* PBXTargetDependency */,
+			);
+			name = SynchronousTimeCalculatorTests;
+			productName = SynchronousTimeCalculatorTests;
+			productReference = 29931EE6238E4F0B007A8EBB /* SynchronousTimeCalculatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -168,6 +221,10 @@
 				TargetAttributes = {
 					29931EB6238DAF48007A8EBB = {
 						CreatedOnToolsVersion = 10.3;
+					};
+					29931EE5238E4F0B007A8EBB = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 29931EB6238DAF48007A8EBB;
 					};
 				};
 			};
@@ -185,6 +242,7 @@
 			projectRoot = "";
 			targets = (
 				29931EB6238DAF48007A8EBB /* SynchronousTimeCalculator */,
+				29931EE5238E4F0B007A8EBB /* SynchronousTimeCalculatorTests */,
 			);
 		};
 /* End PBXProject section */
@@ -199,6 +257,14 @@
 				29931EC5238DAF4A007A8EBB /* LaunchScreen.storyboard in Resources */,
 				29931EC2238DAF4A007A8EBB /* Assets.xcassets in Resources */,
 				29931EC0238DAF48007A8EBB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29931EE4238E4F0B007A8EBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29931EF1238E511E007A8EBB /* listeningTimesTests.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,7 +286,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		29931EE2238E4F0B007A8EBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29931EE9238E4F0B007A8EBB /* SynchronousTimeCalculatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		29931EEC238E4F0B007A8EBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 29931EB6238DAF48007A8EBB /* SynchronousTimeCalculator */;
+			targetProxy = 29931EEB238E4F0B007A8EBB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		29931EBE238DAF48007A8EBB /* Main.storyboard */ = {
@@ -369,7 +451,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = glucode.SynchronousTimeCalculator;
+				PRODUCT_BUNDLE_IDENTIFIER = McFire.SynchronousTimeCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -387,10 +469,50 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = glucode.SynchronousTimeCalculator;
+				PRODUCT_BUNDLE_IDENTIFIER = McFire.SynchronousTimeCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		29931EED238E4F0B007A8EBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8ZWH3AUZPW;
+				INFOPLIST_FILE = SynchronousTimeCalculatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = McFire.SynchronousTimeCalculatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SynchronousTimeCalculator.app/SynchronousTimeCalculator";
+			};
+			name = Debug;
+		};
+		29931EEE238E4F0B007A8EBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8ZWH3AUZPW;
+				INFOPLIST_FILE = SynchronousTimeCalculatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = McFire.SynchronousTimeCalculatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SynchronousTimeCalculator.app/SynchronousTimeCalculator";
 			};
 			name = Release;
 		};
@@ -411,6 +533,15 @@
 			buildConfigurations = (
 				29931ECA238DAF4A007A8EBB /* Debug */,
 				29931ECB238DAF4A007A8EBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		29931EEF238E4F0B007A8EBB /* Build configuration list for PBXNativeTarget "SynchronousTimeCalculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29931EED238E4F0B007A8EBB /* Debug */,
+				29931EEE238E4F0B007A8EBB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
