@@ -13,7 +13,7 @@ class SynchronousTimeCalculatorTests: XCTestCase {
 
     func testRemovingDuplicates() {
         XCTAssertEqual(listeningItems.count, 14, "Initial count of listening items is incorrect")
-        var nonContainedItems = determineNonContainedTimePeriods(in: listeningItems)
+        let nonContainedItems = determineNonContainedTimePeriods(in: listeningItems)
         XCTAssertEqual(nonContainedItems.count, 5, "All overlapping items have been removed")
     }
     
@@ -34,8 +34,8 @@ class SynchronousTimeCalculatorTests: XCTestCase {
             XCTFail("Unable to read test data from json file")
             return
         }
-        var nonContainedItems = determineNonContainedTimePeriods(in: listeningTimesInfiniteLoop)
-        let totalListeningTime = determineTotalSynchronousListeningTime(from:  listeningTimesInfiniteLoop)
+        let nonContainedItems = determineNonContainedTimePeriods(in: listeningTimesInfiniteLoop)
+        let totalListeningTime = determineTotalSynchronousListeningTime(from:  nonContainedItems)
         XCTAssertEqual(totalListeningTime, 5, "Total listeniung times is incorreect")
     }
     
