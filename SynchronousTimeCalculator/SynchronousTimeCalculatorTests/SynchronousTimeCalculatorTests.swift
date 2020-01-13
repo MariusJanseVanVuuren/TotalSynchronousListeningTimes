@@ -23,14 +23,28 @@ class SynchronousTimeCalculatorTests: XCTestCase {
         XCTAssertEqual(uniqueListeningItems.count, 11, "Initial count of listening items is incorrect")
     }
     
-    func testItemContainedBetweenTwoItems() {
-        XCTAssertEqual(listeningItems.count, 14, "Initial count of listening items is incorrect")
-        let nonConatainedItems = removeListeningTimesContainedBetweenTwoOtherListeningPeriods(in: listeningItems)
-        XCTAssertEqual(nonConatainedItems.count, 2, "Initial count of listening items is incorrect")
-    }
-    
     func testTotalSynchronousTimeCalculation() {
         let totalListeningTime = determineTotalSynchronousListeningTime(from:  listeningItems)
-        XCTAssertEqual(totalListeningTime, 68.7, "Initial count of listening items is incorrect")
+        XCTAssertEqual(totalListeningTime, 68.7, "Total listeniung times is incorreect")
+    }
+    
+    
+    func testForInfiniteLoop() {
+        guard let listeningTimesInfiniteLoop = readListeningTimesJson(file: "listeningTimesTest2", bundle: Bundle(for: type(of: self)))?.times else {
+            XCTFail("Unable to read test data from json file")
+            return
+        }
+        var nonContainedItems = determineNonContainedTimePeriods(in: listeningTimesInfiniteLoop)
+        let totalListeningTime = determineTotalSynchronousListeningTime(from:  listeningTimesInfiniteLoop)
+        XCTAssertEqual(totalListeningTime, 5, "Total listeniung times is incorreect")
+    }
+    
+    func testForCorrectTimeCalculationLoop() {
+        guard let listeningTimesInfiniteLoop = readListeningTimesJson(file: "listeningTimesTest3", bundle: Bundle(for: type(of: self)))?.times else {
+            XCTFail("Unable to read test data from json file")
+            return
+        }
+        let totalListeningTime = determineTotalSynchronousListeningTime(from:  listeningTimesInfiniteLoop)
+        XCTAssertEqual(totalListeningTime, 6, "Total listeniung times is incorreect")
     }
 }

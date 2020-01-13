@@ -22,6 +22,8 @@
 		29931EE1238DF159007A8EBB /* ArrayExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29931EE0238DF159007A8EBB /* ArrayExtentions.swift */; };
 		29931EE9238E4F0B007A8EBB /* SynchronousTimeCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29931EE8238E4F0B007A8EBB /* SynchronousTimeCalculatorTests.swift */; };
 		29931EF1238E511E007A8EBB /* listeningTimesTests.json in Resources */ = {isa = PBXBuildFile; fileRef = 29931EF0238E511E007A8EBB /* listeningTimesTests.json */; };
+		29EA396823CC553900DFD656 /* listeningTimesTest3.json in Resources */ = {isa = PBXBuildFile; fileRef = 29EA396623CC550400DFD656 /* listeningTimesTest3.json */; };
+		29EA396923CC553C00DFD656 /* listeningTimesTest2.json in Resources */ = {isa = PBXBuildFile; fileRef = 29EA396423CC54A800DFD656 /* listeningTimesTest2.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		29931EE8238E4F0B007A8EBB /* SynchronousTimeCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynchronousTimeCalculatorTests.swift; sourceTree = "<group>"; };
 		29931EEA238E4F0B007A8EBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29931EF0238E511E007A8EBB /* listeningTimesTests.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = listeningTimesTests.json; sourceTree = "<group>"; };
+		29EA396423CC54A800DFD656 /* listeningTimesTest2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = listeningTimesTest2.json; sourceTree = "<group>"; };
+		29EA396623CC550400DFD656 /* listeningTimesTest3.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = listeningTimesTest3.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,8 +168,10 @@
 		29931EE7238E4F0B007A8EBB /* SynchronousTimeCalculatorTests */ = {
 			isa = PBXGroup;
 			children = (
-				29931EE8238E4F0B007A8EBB /* SynchronousTimeCalculatorTests.swift */,
 				29931EF0238E511E007A8EBB /* listeningTimesTests.json */,
+				29EA396423CC54A800DFD656 /* listeningTimesTest2.json */,
+				29EA396623CC550400DFD656 /* listeningTimesTest3.json */,
+				29931EE8238E4F0B007A8EBB /* SynchronousTimeCalculatorTests.swift */,
 				29931EEA238E4F0B007A8EBB /* Info.plist */,
 			);
 			path = SynchronousTimeCalculatorTests;
@@ -264,7 +270,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29EA396823CC553900DFD656 /* listeningTimesTest3.json in Resources */,
 				29931EF1238E511E007A8EBB /* listeningTimesTests.json in Resources */,
+				29EA396923CC553C00DFD656 /* listeningTimesTest2.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

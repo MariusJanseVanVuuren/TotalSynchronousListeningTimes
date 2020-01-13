@@ -7,8 +7,7 @@ func determineTotalSynchronousListeningTime(from listeningTimes: [ListeningTime]
     }
     let uniqueListeningItems = sortedListeningTimes.uniques
     let nonContainedListeningPeriods = determineNonContainedTimePeriods(in: uniqueListeningItems)
-    let nonContainedBetweenTwoTimeLines = removeListeningTimesContainedBetweenTwoOtherListeningPeriods(in: nonContainedListeningPeriods)
-    let removedOverLappingListeningTimes = removeOverlappingListeningTimes(in: nonContainedBetweenTwoTimeLines)
+    let removedOverLappingListeningTimes = removeOverlappingListeningTimes(in: nonContainedListeningPeriods)
     return determineListeningDuration(for: removedOverLappingListeningTimes)
 }
 
@@ -29,44 +28,6 @@ func determineNonContainedTimePeriods(in listeningItems: [ListeningTime]) -> [Li
         }
     }
     return nonContainedListeningTimes
-}
-
-// remove items that are wholly contained between its previous and next time line items
-func removeListeningTimesContainedBetweenTwoOtherListeningPeriods(in listeningItems: [ListeningTime]) -> [ListeningTime]{
-    var nonContainedBetweenTwoListeningTimesItems = [ListeningTime]()
-    var mutableListningItems = listeningItems
-    var foundContainedItem = true
-    whileCondition : while (foundContainedItem) {
-        foundContainedItem = false
-        forCondition: for index in 0...mutableListningItems.count - 1 {
-            var itemTimeLineIsContainedBetweenTwoOthervalues = false
-            if index == 0 {
-                // Do nothing since the first value can not have a starting date before any other or be contained
-                nonContainedBetweenTwoListeningTimesItems.append(mutableListningItems[index])
-            } else if index == mutableListningItems.count - 1 {
-                // Last value can not be contained between two values due to sorting and removing of contained values
-                nonContainedBetweenTwoListeningTimesItems.append(mutableListningItems[index])
-            } else {
-                let currentItem = mutableListningItems[index]
-                let nextItem = mutableListningItems[index+1]
-                let previousItem = mutableListningItems[index]
-                if currentItem.startTime < previousItem.endTime && currentItem.startTime < nextItem.startTime
-                    && previousItem.endTime > nextItem.startTime && currentItem.endTime < nextItem.endTime
-                    && nextItem.endTime > currentItem.endTime {
-                    itemTimeLineIsContainedBetweenTwoOthervalues = true
-                    foundContainedItem = true
-                }
-                if itemTimeLineIsContainedBetweenTwoOthervalues == false {
-                    nonContainedBetweenTwoListeningTimesItems.append(currentItem)
-                    if let firstIndexOfListeningItem = mutableListningItems.firstIndex(of: currentItem) {
-                        mutableListningItems.remove(at: firstIndexOfListeningItem)
-                    }
-                    break forCondition
-                }
-            }
-        }
-    }
-    return nonContainedBetweenTwoListeningTimesItems
 }
 
 // Remove the over lapping time between time line values
