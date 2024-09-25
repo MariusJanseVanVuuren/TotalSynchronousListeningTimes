@@ -24,6 +24,10 @@
 		29931EF1238E511E007A8EBB /* listeningTimesTests.json in Resources */ = {isa = PBXBuildFile; fileRef = 29931EF0238E511E007A8EBB /* listeningTimesTests.json */; };
 		29EA396823CC553900DFD656 /* listeningTimesTest3.json in Resources */ = {isa = PBXBuildFile; fileRef = 29EA396623CC550400DFD656 /* listeningTimesTest3.json */; };
 		29EA396923CC553C00DFD656 /* listeningTimesTest2.json in Resources */ = {isa = PBXBuildFile; fileRef = 29EA396423CC54A800DFD656 /* listeningTimesTest2.json */; };
+		4E5A03B22CA3EF5B0092BA62 /* listeningTimesTest4.json in Resources */ = {isa = PBXBuildFile; fileRef = 4E5A03B12CA3EF4D0092BA62 /* listeningTimesTest4.json */; };
+		4E5A03B62CA3FCEC0092BA62 /* SynchronousTimeEdgeCasesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5A03B52CA3FCDB0092BA62 /* SynchronousTimeEdgeCasesTests.swift */; };
+		4E5A03B82CA3FE7A0092BA62 /* listeningTimesTest5.json in Resources */ = {isa = PBXBuildFile; fileRef = 4E5A03B72CA3FE710092BA62 /* listeningTimesTest5.json */; };
+		4E5A03BC2CA4028E0092BA62 /* SynchronousTimeEdgeCases2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5A03BB2CA402680092BA62 /* SynchronousTimeEdgeCases2Tests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +62,10 @@
 		29931EF0238E511E007A8EBB /* listeningTimesTests.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = listeningTimesTests.json; sourceTree = "<group>"; };
 		29EA396423CC54A800DFD656 /* listeningTimesTest2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = listeningTimesTest2.json; sourceTree = "<group>"; };
 		29EA396623CC550400DFD656 /* listeningTimesTest3.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = listeningTimesTest3.json; sourceTree = "<group>"; };
+		4E5A03B12CA3EF4D0092BA62 /* listeningTimesTest4.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = listeningTimesTest4.json; sourceTree = "<group>"; };
+		4E5A03B52CA3FCDB0092BA62 /* SynchronousTimeEdgeCasesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynchronousTimeEdgeCasesTests.swift; sourceTree = "<group>"; };
+		4E5A03B72CA3FE710092BA62 /* listeningTimesTest5.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = listeningTimesTest5.json; sourceTree = "<group>"; };
+		4E5A03BB2CA402680092BA62 /* SynchronousTimeEdgeCases2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynchronousTimeEdgeCases2Tests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,7 +179,11 @@
 				29931EF0238E511E007A8EBB /* listeningTimesTests.json */,
 				29EA396423CC54A800DFD656 /* listeningTimesTest2.json */,
 				29EA396623CC550400DFD656 /* listeningTimesTest3.json */,
+				4E5A03B12CA3EF4D0092BA62 /* listeningTimesTest4.json */,
+				4E5A03B72CA3FE710092BA62 /* listeningTimesTest5.json */,
 				29931EE8238E4F0B007A8EBB /* SynchronousTimeCalculatorTests.swift */,
+				4E5A03B52CA3FCDB0092BA62 /* SynchronousTimeEdgeCasesTests.swift */,
+				4E5A03BB2CA402680092BA62 /* SynchronousTimeEdgeCases2Tests.swift */,
 				29931EEA238E4F0B007A8EBB /* Info.plist */,
 			);
 			path = SynchronousTimeCalculatorTests;
@@ -273,6 +285,8 @@
 				29EA396823CC553900DFD656 /* listeningTimesTest3.json in Resources */,
 				29931EF1238E511E007A8EBB /* listeningTimesTests.json in Resources */,
 				29EA396923CC553C00DFD656 /* listeningTimesTest2.json in Resources */,
+				4E5A03B82CA3FE7A0092BA62 /* listeningTimesTest5.json in Resources */,
+				4E5A03B22CA3EF5B0092BA62 /* listeningTimesTest4.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +312,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E5A03B62CA3FCEC0092BA62 /* SynchronousTimeEdgeCasesTests.swift in Sources */,
+				4E5A03BC2CA4028E0092BA62 /* SynchronousTimeEdgeCases2Tests.swift in Sources */,
 				29931EE9238E4F0B007A8EBB /* SynchronousTimeCalculatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

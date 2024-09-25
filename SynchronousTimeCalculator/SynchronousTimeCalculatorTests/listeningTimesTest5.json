@@ -1,0 +1,21 @@
+{
+    "times":
+    [
+        {
+            "startTime": 1,
+            "endTime": 3
+        },
+        {
+            "startTime": 2,
+            "endTime": 4
+        },
+        {
+            "startTime": 3,
+            "endTime": 5
+        },
+        {
+            "startTime": 5,
+            "endTime": 7
+        }
+    ]
+}
